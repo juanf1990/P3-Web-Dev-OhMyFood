@@ -1,0 +1,37 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(243, 243, 243);
+    padding: 40px 0 50px 0;
+    margin: 0;
+    gap: 45px;
+    &__title {
+        color: black;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    &__subtitle {
+        color: rgb(100, 100, 100);
+        font-weight: 300;
+        line-height: 20px;
+        font-size: 17px;
+        padding: 0 30px 0 44px;
+        text-align: center;
+    }
+    &__button {
+        background: linear-gradient($colour-primary, $colour-secondary);
+        border-radius: 50px;
+        border: none;
+        color: rgb(243, 243, 243);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        width: 215px;
+        height: 50px;
+        margin-top: -15px;
+        }
+}
