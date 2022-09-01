@@ -1,56 +1,84 @@
-.restaurants{
-    background-color: #f1f1f1;
+.restaurant-menu{
+    background-color: f6f6f6;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    padding: 60px 18px 60px 18px;
+    padding: 1px 0 60px 0;
     color: black;
-    &__title {
-        font-size: 24px;
-        padding-bottom: 20px;
-    }
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 13px;
-        &__restaurant-card {
+        &__img {
+            min-width: 335px;
+            height: 170px;
+            object-fit: cover;
+        }
+        &__text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &__title {
+                display: flex;
+                flex-direction: column;
+                font-size: 18px;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+        }
+        &__section {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             background-color: white;
             border-radius: 20px;
-            &__img {
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                min-width: 335px;
-                height: 170px;
-                object-fit: cover;
+            border-bottom: 5px solid #d2d0d0;
+            &__title {
+                background-color: #f6f6f6;
+                border-bottom: 2px solid $colour-tertiary;
+                color: #8f8f8f;
+                font-size: 16px;
+                margin-bottom: 5px;
+                padding-left: 15px;
             }
-            &__text {
+            &__container {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                &__header {
-                    display: flex;
-                    flex-direction: column;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 15px;
+                background-color: #f6f6f6;
+                padding-right: 5px;
+                padding-left: 5px;
+                &__card {
+                    border-radius: 15px;
+                    background-color: white;
+                    height: 65px;
                     &__title {
-                        font-size: 18px;
                         padding-left: 10px;
-                        padding-top: 10px;
+                        font-weight: 500;
                     }
                     &__subtitle {
-                        font-size: 18px;
-                        font-weight: 300;
                         padding-left: 10px;
-                        padding-bottom: 14px;
+                        font-size: 16px;
+                    }
+                    &__price {
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin-left: 980px;
+                        
                     }
                 }
-                &__icon {
-                    font-size: 24px;
-                    color: #8f8f8f;
-                    padding-top: 20px;
-                    padding-right: 20px;
-                }
+            }
+        }
+        &__order {
+            padding-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__button {
+                background-color: $colour-primary;
+                width: 185px;
+                color: white;
             }
         }
     }

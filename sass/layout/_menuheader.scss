@@ -1,0 +1,31 @@
+.restaurant-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        &__img {
+            display: flex;
+            width: 375px;
+            height: 212px;
+        }
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 30px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            color: black;
+            font-family: 'Shrikhand', sans-serif;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: #dadada;
+        }
+        &__button {
+            height: 50px;
+        }
+    }
+}

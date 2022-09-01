@@ -441,6 +441,7 @@ button {
   width: 215px;
   height: 50px;
   margin-top: -15px;
+  cursor: pointer;
 }
 
 .choose {
@@ -497,62 +498,89 @@ button {
   color: #9356DC;
 }
 
-.restaurants {
-  background-color: #f1f1f1;
+.restaurant-menu {
+  background-color: f6f6f6;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  padding: 60px 18px 60px 18px;
+  padding: 1px 0 60px 0;
   color: black;
 }
-.restaurants__title {
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-.restaurants__container {
+.restaurant-menu__container {
   display: flex;
   flex-direction: column;
-  gap: 13px;
 }
-.restaurants__container__restaurant-card {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 20px;
-}
-.restaurants__container__restaurant-card__img {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.restaurant-menu__container__img {
   min-width: 335px;
   height: 170px;
   object-fit: cover;
 }
-.restaurants__container__restaurant-card__text {
+.restaurant-menu__container__text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.restaurants__container__restaurant-card__text__header {
+.restaurant-menu__container__text__title {
   display: flex;
   flex-direction: column;
-}
-.restaurants__container__restaurant-card__text__header__title {
   font-size: 18px;
   padding-left: 10px;
   padding-top: 10px;
 }
-.restaurants__container__restaurant-card__text__header__subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  padding-left: 10px;
-  padding-bottom: 14px;
+.restaurant-menu__container__section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom: 5px solid #d2d0d0;
 }
-.restaurants__container__restaurant-card__text__icon {
-  font-size: 24px;
+.restaurant-menu__container__section__title {
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #99E2D0;
   color: #8f8f8f;
-  padding-top: 20px;
-  padding-right: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+.restaurant-menu__container__section__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #f6f6f6;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.restaurant-menu__container__section__container__card {
+  border-radius: 15px;
+  background-color: white;
+  height: 65px;
+}
+.restaurant-menu__container__section__container__card__title {
+  padding-left: 10px;
+  font-weight: 500;
+}
+.restaurant-menu__container__section__container__card__subtitle {
+  padding-left: 10px;
+  font-size: 16px;
+}
+.restaurant-menu__container__section__container__card__price {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 980px;
+}
+.restaurant-menu__container__order {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurant-menu__container__order__button {
+  background-color: #9356DC;
+  width: 185px;
+  color: white;
 }
 
 .footer {
@@ -577,6 +605,8 @@ button {
 .footer__container__item {
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
+  color: #e8e8e8;
 }
 .footer__container__item__icon {
   margin-right: 10px;
@@ -585,6 +615,40 @@ button {
 .footer__container__item__link {
   text-decoration: none;
   color: #e8e8e8;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.restaurant-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.restaurant-menu__container {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-menu__container__img {
+  display: flex;
+  width: 375px;
+  height: 212px;
+}
+.restaurant-menu__container__text {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: black;
+  font-family: "Shrikhand", sans-serif;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #dadada;
+}
+.restaurant-menu__container__button {
+  height: 50px;
 }
 
 .quote {
