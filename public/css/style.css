@@ -411,7 +411,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   padding: 40px 0 50px 0;
   margin: 0;
   gap: 45px;
@@ -498,89 +498,74 @@ button {
   color: #9356DC;
 }
 
-.restaurant-menu {
-  background-color: f6f6f6;
+.restaurants {
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  padding: 1px 0 60px 0;
+  padding: 60px 0 60px 0;
   color: black;
 }
-.restaurant-menu__container {
+.restaurants__title {
+  padding-left: 12px;
+  padding-bottom: 28px;
+}
+.restaurants__container {
   display: flex;
   flex-direction: column;
+  gap: 18px;
 }
-.restaurant-menu__container__img {
-  min-width: 335px;
+.restaurants__container__restaurant-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 12px;
+  flex-wrap: wrap;
+}
+.restaurants__container__restaurant-card__img {
+  min-width: 330px;
   height: 170px;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.restaurant-menu__container__text {
+.restaurants__container__restaurant-card__span {
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.restaurant-menu__container__text__title {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-.restaurant-menu__container__section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: white;
-  border-radius: 20px;
-  border-bottom: 5px solid #d2d0d0;
-}
-.restaurant-menu__container__section__title {
-  background-color: #f6f6f6;
-  border-bottom: 2px solid #99E2D0;
-  color: #8f8f8f;
-  font-size: 16px;
-  margin-bottom: 5px;
-  padding-left: 15px;
-}
-.restaurant-menu__container__section__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 15px;
-  background-color: #f6f6f6;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-.restaurant-menu__container__section__container__card {
-  border-radius: 15px;
-  background-color: white;
-  height: 65px;
-}
-.restaurant-menu__container__section__container__card__title {
-  padding-left: 10px;
-  font-weight: 500;
-}
-.restaurant-menu__container__section__container__card__subtitle {
-  padding-left: 10px;
-  font-size: 16px;
-}
-.restaurant-menu__container__section__container__card__price {
-  font-weight: 500;
-  font-size: 14px;
-  margin-left: 980px;
-}
-.restaurant-menu__container__order {
-  padding-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a7030;
+  background-color: #99E2D0;
+  border-radius: 4px;
+  width: 80px;
+  height: 29px;
+  top: 13px;
+  left: 240px;
 }
-.restaurant-menu__container__order__button {
-  background-color: #9356DC;
-  width: 185px;
-  color: white;
+.restaurants__container__restaurant-card__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.restaurants__container__restaurant-card__text__header {
+  font-size: 16px;
+}
+.restaurants__container__restaurant-card__text__icon {
+  font-size: 24px;
+  font-weight: none;
+}
+.restaurants__container__restaurant-card__text__icon:hover {
+  color: #9356DC;
 }
 
 .footer {
@@ -649,6 +634,60 @@ button {
 }
 .restaurant-menu__container__button {
   height: 50px;
+}
+.restaurant-menu__container__section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom: 5px solid #d2d0d0;
+}
+.restaurant-menu__container__section__title {
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #99E2D0;
+  color: #8f8f8f;
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+.restaurant-menu__container__section__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #f6f6f6;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.restaurant-menu__container__section__container__card {
+  border-radius: 15px;
+  background-color: white;
+  height: 65px;
+}
+.restaurant-menu__container__section__container__card__title {
+  padding-left: 10px;
+  font-weight: 500;
+}
+.restaurant-menu__container__section__container__card__subtitle {
+  padding-left: 10px;
+  font-size: 16px;
+}
+.restaurant-menu__container__section__container__card__price {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 980px;
+}
+.restaurant-menu__container__order {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurant-menu__container__order__button {
+  background-color: #9356DC;
+  width: 185px;
+  color: white;
 }
 
 .quote {
