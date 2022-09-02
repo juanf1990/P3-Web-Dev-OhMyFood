@@ -1,0 +1,114 @@
+.restaurant-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        &__img {
+            display: flex;
+            width: 375px;
+            height: 212px;
+            object-fit: cover;
+        }
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 35px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            color: black;
+            font-family: 'Shrikhand', sans-serif;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            background-color: #f1f1f1;
+            font-size: 22px;
+            &__header {
+                width: 220px;
+            }
+        }
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #f1f1f1;
+            &__section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                background-color: #f1f1f1;
+                border-radius: 20px;
+                border-bottom: 5px solid #d2d0d0;
+                gap: 15px;
+                &__title {
+                    background-color: #f1f1f1;
+                    border-bottom: 2px solid $colour-tertiary;
+                    color: #797979;
+                    font-size: 16px;
+                    padding-left: 15px;
+                    font-weight: 400;
+                }
+                &__container {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    background-color: #f6f6f6;
+                    &__card {
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 15px;
+                        background-color: white;
+                        height: 65px;
+                        width: 350px;
+                        color: black;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        line-height: 20px;
+                        cursor: pointer;
+                        &__title {
+                            padding-left: 10px;
+                            padding-top: 10px;
+                            font-weight: 500;
+                            font-size: 15px;
+                            width: 250px;
+                        }
+                        &__subtitle {
+                            display: flex;
+                            flex-shrink:inherit;
+                            padding-left: 10px;
+                            font-size: 13px;
+                        }
+                        &__price {
+                            font-weight: 500;
+                            font-size: 14px;
+                            position: absolute;
+                            margin-left: 300px;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }  
+        }
+        &__order {
+            padding-top: 40px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__button {
+                background: linear-gradient($colour-primary,$colour-secondary);
+                width: 185px;
+                height: 46px;
+                color: white;
+                border-radius: 50px;
+                font-size: 17px;
+                font-style: normal;
+                cursor: pointer;
+            }
+        }
+    }
+}
