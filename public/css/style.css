@@ -522,6 +522,8 @@ button {
   position: relative;
   padding: 0 12px;
   flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
 }
 .restaurants__container__restaurant-card__img {
   min-width: 330px;
