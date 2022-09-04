@@ -609,7 +609,8 @@ button {
 .restaurant-menu {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 .restaurant-menu__container {
@@ -676,7 +677,7 @@ button {
   border-radius: 15px;
   background-color: white;
   height: 65px;
-  width: 350px;
+  width: 355px;
   color: black;
   margin-left: 10px;
   margin-right: 10px;
@@ -709,6 +710,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f1f1f1;
+  width: 375px;
 }
 .restaurant-menu__container__order__button {
   background: linear-gradient(#9356DC, #FF79DA);
