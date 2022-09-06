@@ -2,47 +2,57 @@
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     margin: 0;
-    padding: 60px 0 60px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: black;
     &__title {
-        padding-left: 12px;
         padding-bottom: 28px;
+        padding-right: 160px;
     }
     &__container {
         display: flex;
         flex-direction: column;
         gap: 18px;
+        margin: 0;
+        padding: 0;
         &__restaurant-card {
             display: flex;
             flex-direction: column;
-            position: relative;
-            padding: 0 12px;
-            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
             text-decoration: none;
             color: black;
-            &__img {
-                min-width: 330px;
-                height: 170px;
-                object-fit: cover;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
+            width: 340px;
+            &:hover {
+                transform: scale(1.01);
             }
-            &__span {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 16px;
-                font-weight: 400;
-                color: #2a7030;
-                background-color: $colour-tertiary;
-                border-radius: 4px;
-                width: 80px;
-                height: 29px;
-                top: 13px;
-                left: 240px;
+            &__imgbox {
+                width: 330px;
+                height: 170px;
+                &__img {
+                    width: 330px;
+                    height: 170px;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+                &__new {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #2a7030;
+                    background-color: $colour-tertiary;
+                    border-radius: 4px;
+                    width: 80px;
+                    height: 29px;
+                    top: -170px;
+                    left: 230px;
+                }
             }
             &__text {
                 display: flex;
@@ -55,6 +65,8 @@
                 background-color: #ffffff;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
+                width: 330px;
+                box-shadow: #f6f6f6;
                 &__header {
                     font-size: 16px;
                 }

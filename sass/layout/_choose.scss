@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 50px;
-    padding-left: 18px;
-    padding-right: 18px;
     padding-bottom: 60px;
     margin: 0;
+    width: 375px;
     &__title {
+        padding-left: 18px;
         color: black;
         font-size: 24px;
     }
@@ -15,8 +15,10 @@
         display: flex;
         flex-direction: column;
         padding-left: 18px;
+        padding-right: 18px;
         padding-top: 30px;
         gap: 20px;
+        width: 375px;
         &__list {
            background-color: #f7f7f7;
            display: flex;

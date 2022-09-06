@@ -1,101 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/public/css/style.css">
-        <script src="https://kit.fontawesome.com/58ae435494.js" crossorigin="anonymous"></script>
-        <title>OHMYFOOD</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1 class="header__title">ohmyfood</h1>
-        </header>
-        <main>
-            <div class="city">
-                <i class="fa-solid fa-location-dot city__icon"></i><p class="city__title">Paris, Belleville</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/58ae435494.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>OHMYFOOD</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">ohmyfood</h1>
+    </header>
+    <main>
+      <section class="city">
+        <i class="fa-solid fa-location-dot city__icon"></i>
+        <p class="city__title">Paris, Belleville</p>
+      </section>
+      <section class="explore">
+        <h2 class="explore__title">Book the menu you like</h2>
+        <p class="explore__subtitle">
+          Discover top-of-the-art restaurants we picked for you
+        </p>
+        <a href="#restaurants">
+          <button class="explore__button">Explore our restaurants</button>
+        </a>
+      </section>
+      <section class="choose">
+        <h2 class="choose__title">How it works</h2>
+        <ol class="choose__container">
+          <li class="choose__container__list">
+            <span class="choose__container__number">1</span
+            ><i
+              class="fa-solid fa-mobile-screen-button choose__container__icon"
+            ></i
+            >Choose a restaurant
+          </li>
+          <li class="choose__container__list">
+            <span class="choose__container__number">2</span
+            ><i class="fa-solid fa-list choose__container__icon"></i>Create your
+            menu
+          </li>
+          <li class="choose__container__list">
+            <span class="choose__container__number">3</span
+            ><i class="fa-solid fa-store choose__container__icon"></i>Go enjoy
+            it at the restaurant
+          </li>
+        </ol>
+      </section>
+      <section id="restaurants" class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="restaurants__container">
+          <a
+            href="/thefullpalette.html"
+            class="restaurants__container__restaurant-card restaurants__container__restaurant-1"
+          >
+            <div class="restaurants__container__restaurant-card__imgbox">
+              <img
+                src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                class="restaurants__container__restaurant-card__imgbox__img"
+                alt="restaurant-plate"
+              />
+              <span class="restaurants__container__restaurant-card__imgbox__new">
+                New
+              </span>
             </div>
-            <div class="explore">
-                <h2 class="explore__title">Book the menu you like</h2>
-                <p class="explore__subtitle">Discover top-of-the-art restaurants we picked for you</p>
-                <a href="#restaurants">
-                    <button class="explore__button">Explore our restaurants</button>
-                </a>
-                </div>
-            <div class="choose">
-                <h2 class="choose__title">How it works</h2>
-                <ol class="choose__container">
-                    <li class="choose__container__list"><span class="choose__container__number">1</span><i class="fa-solid fa-mobile-screen-button choose__container__icon"></i>Choose a restaurant</li>
-                    <li class="choose__container__list"><span class="choose__container__number">2</span><i class="fa-solid fa-list choose__container__icon"></i>Create your menu</li>
-                    <li class="choose__container__list"><span class="choose__container__number">3</span><i class="fa-solid fa-store choose__container__icon"></i>Go enjoy it at the restaurant</li>
-                </ol>
+            <div class="restaurants__container__restaurant-card__text">
+              <div
+                class="restaurants__container__restaurant-card__text__header"
+              >
+                <h3
+                  class="restaurants__container__restaurant-card__text__header__title"
+                >
+                  The Full Palette
+                </h3>
+                <span
+                  class="restaurants__container__restaurant-card__text__header__subtitle"
+                  >New York</span
+                >
+              </div>
+              <div class="restaurants__container__restaurants-card__text__icon">
+                <i
+                  class="fa-solid fa-heart restaurants__container__restaurant-card__text__iconsolid"
+                ></i>
+                <i
+                  class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"
+                ></i>
+              </div>
             </div>
-            <div id="restaurants" class="restaurants">
-                <h2 class="restaurants__title">Restaurants</h2>
-                <div class="restaurants__container">
-                    <a href="/thefullpalette.html" class="restaurants__container__restaurant-card restaurants__container__restaurant-1">    
-                        <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurants__container__restaurant-card__img" alt="restaurant-plate">
-                            <span class="restaurants__container__restaurant-card__span">New</span>
-                            <div class="restaurants__container__restaurant-card__text">
-                                <div class="restaurants__container__restaurant-card__text__header">
-                                    <h3 class="restaurants__container__restaurant-card__text__header__title">The Full Palette</h3>
-                                    <span class="restaurants__container__restaurant-card__text__header__subtitle">New York</span>
-                                </div>    
-                                <div class="restaurants__container__restaurants-card__text__icon">
-                                <i class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"></i>
-                                </div>
-                            </div>
-                    </a>
-                    <a href="./theenchantedplate.html" class="restaurants__container__restaurant-card restaurants__container__restaurant-2">
-                        <img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurants__container__restaurant-card__img" alt="restaurant-plate">
-                        <span class="restaurants__container__restaurant-card__span">New</span>
-                        <div class="restaurants__container__restaurant-card__text">
-                            <div class="restaurants__container__restaurant-card__text__header">
-                                <h3 class="restaurants__container__restaurant-card__text__header__title">The Enchanted Plate</h3>
-                                <span class="restaurants__container__restaurant-card__text__header__subtitle">New York</span>
-                            </div>    
-                            <div class="restaurants__container__restaurants-card__text__icon">
-                            <i class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/bastille.html" class="restaurants__container__restaurant-card restaurants__container__restaurant-3">
-                        <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurants__container__restaurant-card__img" alt="restaurant-plate">
-                        <div class="restaurants__container__restaurant-card__text">
-                            <div class="restaurants__container__restaurant-card__text__header">
-                                <h3 class="restaurants__container__restaurant-card__text__header__title">Bastille</h3>
-                                <span class="restaurants__container__restaurant-card__text__header__subtitle">New York</span>
-                            </div>    
-                            <div class="restaurants__container__restaurants-card__text__icon">
-                            <i class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./legourmand.html" class="restaurants__container__restaurant-card restaurants__container__restaurant-4">
-                        <img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurants__container__restaurant-card__img" alt="restaurant-plate">
-                        <div class="restaurants__container__restaurant-card__text">
-                            <div class="restaurants__container__restaurant-card__text__header">
-                                <h3 class="restaurants__container__restaurant-card__text__header__title">Le Gourmand</h3>
-                                <span class="restaurants__container__restaurant-card__text__header__subtitle">New York</span>
-                            </div>    
-                            <div class="restaurants__container__restaurants-card__text__icon">
-                            <i class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+          </a>
+          <a
+            href="./theenchantedplate.html"
+            class="restaurants__container__restaurant-card restaurants__container__restaurant-2"
+          >
+          <div class="restaurants__container__restaurant-card__imgbox">
+            <img
+            src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            class="restaurants__container__restaurant-card__imgbox__img"
+            alt="restaurant-plate"
+          />
+          <span class="restaurants__container__restaurant-card__imgbox__new"
+            >New</span
+          >
+          </div>
+            <div class="restaurants__container__restaurant-card__text">
+              <div
+                class="restaurants__container__restaurant-card__text__header"
+              >
+                <h3
+                  class="restaurants__container__restaurant-card__text__header__title"
+                >
+                  The Enchanted Plate
+                </h3>
+                <span
+                  class="restaurants__container__restaurant-card__text__header__subtitle"
+                  >New York</span
+                >
+              </div>
+              <div class="restaurants__container__restaurants-card__text__icon">
+                <i
+                  class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"
+                ></i>
+              </div>
             </div>
-        </main>
-        <footer class="footer">
-            <h4 class="footer__title">ohmyfood</h4>
-            <div class="footer__container">
-                <a href="#" class="footer__container__item footer__container__item-1"><i class="fa-solid fa-utensils footer__container__item__icon"></i>Suggest a restaurant</a>
-                <a href="#" class="footer__container__item item-2"><i class="fa-solid fa-handshake-angle footer__container__item__icon"></i>Become a partner</a>
-                <a href="#" class="footer__container__item item-3">Legal</a>
-                <a href="#" class="footer__container__item item-4"><a class="footer__container__item__link" href="mailto:">Contact</a></a>
+          </a>
+          <a
+            href="/bastille.html"
+            class="restaurants__container__restaurant-card restaurants__container__restaurant-3"
+          >
+          <div class="restaurants__container__restaurant-card__imgbox">
+            <img
+            src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            class="restaurants__container__restaurant-card__imgbox__img"
+            alt="restaurant-plate"
+          />
+          </div>
+            <div class="restaurants__container__restaurant-card__text">
+              <div
+                class="restaurants__container__restaurant-card__text__header"
+              >
+                <h3
+                  class="restaurants__container__restaurant-card__text__header__title"
+                >
+                  Bastille
+                </h3>
+                <span
+                  class="restaurants__container__restaurant-card__text__header__subtitle"
+                  >New York</span
+                >
+              </div>
+              <div class="restaurants__container__restaurants-card__text__icon">
+                <i
+                  class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"
+                ></i>
+              </div>
             </div>
-        </footer>
-    </body>
+          </a>
+          <a
+            href="./legourmand.html"
+            class="restaurants__container__restaurant-card restaurants__container__restaurant-4"
+          >
+          <div class="restaurants__container__restaurant-card__imgbox">
+            <img
+            src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            class="restaurants__container__restaurant-card__imgbox__img"
+            alt="restaurant-plate"
+          />
+          </div>
+            <div class="restaurants__container__restaurant-card__text">
+              <div
+                class="restaurants__container__restaurant-card__text__header"
+              >
+                <h3
+                  class="restaurants__container__restaurant-card__text__header__title"
+                >
+                  Le Gourmand
+                </h3>
+                <span
+                  class="restaurants__container__restaurant-card__text__header__subtitle"
+                  >New York</span
+                >
+              </div>
+              <div class="restaurants__container__restaurants-card__text__icon">
+                <i
+                  class="fa-regular fa-heart restaurants__container__restaurant-card__text__icon"
+                ></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h4 class="footer__title">ohmyfood</h4>
+      <div class="footer__container">
+        <a href="#" class="footer__container__item footer__container__item-1"
+          ><i class="fa-solid fa-utensils footer__container__item__icon"></i
+          >Suggest a restaurant</a
+        >
+        <a href="#" class="footer__container__item item-2"
+          ><i
+            class="fa-solid fa-handshake-angle footer__container__item__icon"
+          ></i
+          >Become a partner</a
+        >
+        <a href="#" class="footer__container__item item-3">Legal</a>
+        <a href="#" class="footer__container__item item-4"
+          ><a class="footer__container__item__link" href="mailto:"
+            >Contact</a
+          ></a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
