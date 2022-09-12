@@ -12,6 +12,9 @@
         margin-right: 150px;
         color: black;
         font-size: 22px;
+        @media (min-width:992px) {
+            margin-right: 450px;            
+        }   
     }  
     &__title {
         font-family: 'Shrikhand', sans-serif;

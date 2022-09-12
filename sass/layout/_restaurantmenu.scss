@@ -13,6 +13,9 @@
             height: 212px;
             object-fit: cover;
             z-index: -1;
+            @media (min-width: 992px) {
+                width: 992px;
+            }
         }
         &__text {
             z-index: 0;
@@ -45,6 +48,9 @@
             top: -40px;
             position: relative;
             transition: all 1s;
+            @media (min-width: 992px) {
+                width: 992px;
+            }
             &__section {
                 display: flex;
                 flex-direction: column;
@@ -76,8 +82,20 @@
                     gap: 15px;
                     background-color: #f6f6f6;
                     width: 350px;
-                    margin-top: 5px;
-                    &__card {
+                    margin-top: 20px;
+                    animation: fadeIn 2500ms;
+                    animation-delay: 1000ms;
+                    transform: translateY(-20px);
+                    transform-origin: 50% top;
+                    transition: all 2500ms;
+                    transition-delay: 1000ms;
+                    transition-timing-function: ease-in-out;
+                    @media (min-width: 992px) {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: center; 
+                    }
+                        &__card {
                         display: flex;
                         flex-direction: column;
                         border-radius: 15px;
@@ -91,13 +109,11 @@
                         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                         cursor: pointer;
                         transition: all 1s;
+                        @media (min-width:992px) {
+                            width: fit-content;
+                        }
                         &:hover {
                             transform: scale(1.01);
-                        }
-                        &:hover > .subtitle {
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
                         }
                         &:hover > .price {
                             translate: -50px;
@@ -105,20 +121,14 @@
                             transition-delay: 100ms;
                             transition-timing-function: ease-in-out;
                         }
-                        &:not(:hover) >.price {
+                        &:not(:hover) > .price {
                             translate: 5px;
                             transition-duration: 1s;
                             transition-delay: 100ms;
                             transition-timing-function: ease-in-out;
                         }
-                        &:not(:hover) > .icon {
-                            transform: translate(10px);
-                            transition-duration: 500ms;
-                            transition-delay: 0;
-                            transition-timing-function: ease-in-out;
-                            opacity: 0;
-                        }
                         &:hover > .icon {
+                            transform-origin: 0% right;
                             transform: translate(-100px);
                             transition-duration: 1s;
                             transition-delay: 100ms;
@@ -126,6 +136,24 @@
                             opacity: 1;
                             span {
                                 animation: spin 1s linear;
+                            }
+                            @media (min-width:992px) {
+                                transform: translate(-200px);
+                            }
+                        &:not(:hover) > .icon {
+                            transform: translate(10px);
+                            transition-duration: 500ms;
+                            transition-delay: 0;
+                            transition-timing-function: ease-in-out;
+                            opacity: 0;
+                        }
+                        }
+                        @keyframes fadeIn {
+                            from {
+                                opacity: 0;
+                            }
+                            to {
+                                opacity: 1;
                             }
                         }
                         @keyframes spin {
@@ -144,13 +172,16 @@
                             width: 250px;
                         }
                         &__subtitle {
-                            display: flex;
-                            flex-shrink: initial;
+                            display: inline-block;
                             padding-left: 10px;
                             font-size: 13px;
-                            // text-overflow: ellipsis;
-                            // white-space: nowrap;
-                            // overflow: hidden;
+                            max-width: 245px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            @media (min-width:992px) {
+                                max-width: 150px;
+                            }
                         }
                         &__price {
                             font-weight: 500;
@@ -158,10 +189,10 @@
                             position: absolute;
                             margin-left: 300px;
                             margin-top: 30px;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
                             color: #525252;
+                            @media (min-width:992px) {
+                                margin-left: 200px;
+                            }
                         }       
                         &__icon {
                             display: inline-flex;
@@ -195,15 +226,18 @@
             justify-content: center;
             background-color: #f6f6f6;
             width: 375px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             position: relative;
             top: -40px;
             margin-bottom: 0;
+            @media (min-width:992px) {
+             width: 992px;           
+            }
             &__button {
                 background: linear-gradient($colour-primary,$colour-secondary);
                 width: 185px;
                 height: 46px;
                 color: white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 border-radius: 50px;
                 font-size: 17px;
                 font-style: normal;
