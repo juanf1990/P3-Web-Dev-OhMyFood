@@ -14,7 +14,7 @@
             object-fit: cover;
             z-index: -1;
             @media (min-width: 992px) {
-                width: 992px;
+                width: 1440px;
             }
         }
         &__text {
@@ -49,7 +49,7 @@
             position: relative;
             transition: all 1s;
             @media (min-width: 992px) {
-                width: 992px;
+                width: 1440px;
             }
             &__section {
                 display: flex;
@@ -84,8 +84,8 @@
                     width: 350px;
                     margin-top: 20px;
                     animation: fadeIn 2500ms;
-                    animation-delay: 1000ms;
-                    transform: translateY(-20px);
+                    // animation-delay: 1000ms;
+                    // transform: translateY(-20px);
                     transform-origin: 50% top;
                     transition: all 2500ms;
                     transition-delay: 1000ms;
@@ -148,8 +148,10 @@
                             opacity: 0;
                         }
                         }
+                        
                         @keyframes fadeIn {
                             from {
+                                transform: translateY(20px);
                                 opacity: 0;
                             }
                             to {
@@ -230,7 +232,7 @@
             top: -40px;
             margin-bottom: 0;
             @media (min-width:992px) {
-             width: 992px;           
+             width: 1440px;           
             }
             &__button {
                 background: linear-gradient($colour-primary,$colour-secondary);
