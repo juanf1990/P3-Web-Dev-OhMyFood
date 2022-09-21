@@ -22,7 +22,7 @@
         text-align: center;
     }
     &__button {
-        background: linear-gradient($colour-primary, $colour-secondary);
+        background: linear-gradient(to top, $colour-primary, $colour-secondary);
         border-radius: 50px;
         border: none;
         color: rgb(243, 243, 243);

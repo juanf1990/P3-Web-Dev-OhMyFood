@@ -48,6 +48,9 @@
             background-color: #fce6ff;
             transform: scale(1.02);
             }
+            &:hover .icon {
+                color: $colour-primary;    
+            }
         }
         &__number {
             background-color: $colour-primary;
@@ -63,9 +66,6 @@
             margin-left: 15px;
             margin-right: 15px;
             font-size: 18px;
-            &:hover {
-                color: $colour-primary;
-            }
         }
     }
 }

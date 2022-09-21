@@ -86,7 +86,9 @@
                     font-size: 24px;
                     font-weight: none;
                     position: absolute;
-                    color: $colour-primary;
+                    background: linear-gradient(to top, $colour-secondary, $colour-primary);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
                     margin-top: 3px;
                     opacity: 0;
                     &:hover {
