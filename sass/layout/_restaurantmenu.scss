@@ -129,16 +129,8 @@
                             max-width: 235px;
                             transition-duration: 1s;
                         }
-                        &:not(:hover) .subtitle {
-                            transition-duration: 1s;
-                        }
                         &:hover .price {
                             translate: -5px;
-                            transition-duration: 1s;
-                            transition-delay: 100ms;
-                            transition-timing-function: ease-in-out;
-                        }
-                        &:not(:hover) .price {
                             transition-duration: 1s;
                             transition-delay: 100ms;
                             transition-timing-function: ease-in-out;
@@ -156,13 +148,6 @@
                             span {
                                 animation: spin 1s linear;
                             }
-                        &:not(:hover) .icon {
-                            transition-duration: 1s;
-                            transition-delay: 100ms;
-                            transition-timing-function: ease-in-out;
-                            transform-origin: 0% left;
-                            opacity: 0;
-                        }
                         }
                         @keyframes fadeIn {
                             from {
