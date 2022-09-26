@@ -7,7 +7,7 @@
     z-index: -1;
     opacity: 0;
     background: linear-gradient(to top left, #f6f6f6, rgb(243, 164, 8));
-    animation: fadeOut 5s linear;
+    animation: fadeOut 3s linear;
 }
 
 .loader {
@@ -22,7 +22,7 @@
     font-size: 20px;
     color: #fff;
     font-family: 'Shrikhand', sans-serif;
-    animation: textAnim 2500ms infinite;
+    animation: textAnim 3s infinite;
 }
 
 .load_anim1, .load_anim2 {
@@ -38,11 +38,11 @@
     left: 50%;
     top: 50%;
     margin: -100px 0 0 -100px;
-    animation: loadAnim 5s ease;
+    animation: loadAnim 3s ease;
     animation-iteration-count: infinite; 
 }
 .load_anim2 {
-    animation: loadAnim2 5s ease;
+    animation: loadAnim2 3s ease;
     animation-iteration-count: infinite;  
 }
 

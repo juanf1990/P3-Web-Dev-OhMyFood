@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f3f3f3;
+    background-color: #F6F6F6;
     padding: 40px 0 50px 0;
     margin: 0;
     gap: 45px;
@@ -39,8 +39,12 @@
         height: 50px;
         margin-top: -15px;
         cursor: pointer;
+        -webkit-box-shadow: 0px 8px 10px -1px rgba(137,137,137,0.8); 
+        box-shadow: 0px 8px 10px -1px rgba(137,137,137,0.8);
         &:hover {
+            transition: all 1s;
             transform: scale(1.03);
+            background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
         }
         }
 }

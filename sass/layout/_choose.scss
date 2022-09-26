@@ -7,11 +7,11 @@
     padding-bottom: 60px;
     margin: 0;
     &__title {
-        padding-left: 18px;
+        position: relative;
+        margin-left: -170px;
         color: black;
-        font-size: 24px;
         @media (min-width: 992px) {
-            padding-left: 0;
+            margin-left: 0;
         }
     }
     &__container {
@@ -41,17 +41,20 @@
            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
            width: 100%;
            cursor: pointer;
+           gap: 20px;
            @media (min-width: 992px) {
             width: 375px;
            }
            &:hover {
-            background-color: #fce6ff;
             transform: scale(1.02);
-            }
-            &:hover .icon {
-                color: $colour-primary;    
-            }
+           }
         }
+        &__list:nth-of-type(3) {
+            background-color: #F5EDFF;
+            & .icon {
+            color: $colour-primary;
+            }
+           }
         &__number {
             background-color: $colour-primary;
             color: white;
