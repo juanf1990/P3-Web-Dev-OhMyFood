@@ -79,17 +79,16 @@
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 width: 330px;
-                box-shadow: #f6f6f6;
                 &__header {
                     font-size: 16px;
                 }
                 &__iconsolid {
                     font-size: 24px;
-                    font-weight: none;
                     position: absolute;
                     background: linear-gradient(to top, $colour-secondary, $colour-primary);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
+                    background-clip: text;
                     margin-top: 3px;
                     opacity: 0;
                     &:hover {
@@ -99,7 +98,6 @@
                 }
                 &__icon {
                     font-size: 24px;
-                    font-weight: none;
                     &:hover {
                         opacity: 0;
                     }

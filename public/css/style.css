@@ -449,6 +449,10 @@ button {
   text-align: center;
 }
 .explore__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 50px;
   border: none;
@@ -512,7 +516,7 @@ button {
   color: black;
   font-weight: 500;
   font-size: 16px;
-  border-bottom: 5px solid rgb(229, 229, 229);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   width: 100%;
   cursor: pointer;
 }
@@ -634,18 +638,17 @@ button {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 330px;
-  box-shadow: #f6f6f6;
 }
 .restaurants__container__restaurant-card__text__header {
   font-size: 16px;
 }
 .restaurants__container__restaurant-card__text__iconsolid {
   font-size: 24px;
-  font-weight: none;
   position: absolute;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   margin-top: 3px;
   opacity: 0;
 }
@@ -655,7 +658,6 @@ button {
 }
 .restaurants__container__restaurant-card__text__icon {
   font-size: 24px;
-  font-weight: none;
 }
 .restaurants__container__restaurant-card__text__icon:hover {
   opacity: 0;
@@ -829,14 +831,14 @@ button {
   }
 }
 .restaurant-menu__container__menu__section__container__card:hover .title {
-  max-width: 200px;
+  max-width: 254px;
 }
 .restaurant-menu__container__menu__section__container__card:hover .subtitle {
   max-width: 235px;
   transition-duration: 1s;
 }
 .restaurant-menu__container__menu__section__container__card:hover .price {
-  translate: -5px;
+  transform: translate(-5px);
   transition-duration: 1s;
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
@@ -885,7 +887,7 @@ button {
   padding-top: 10px;
   font-weight: 500;
   font-size: 18px;
-  max-width: 220px;
+  max-width: 254px;
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext__subtitle {
   display: inline-block;
@@ -1039,7 +1041,6 @@ button {
     opacity: 0;
     z-index: -1;
     transform: scale(0);
-    position: hidden;
   }
 }
 @keyframes textAnim {

@@ -23,6 +23,10 @@
         text-align: center;
     }
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         background: linear-gradient(to top, $colour-primary, $colour-secondary);
         border-radius: 50px;
         border: none;

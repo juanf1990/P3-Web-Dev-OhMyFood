@@ -18,9 +18,6 @@
                 width: 100%;
                 height: 242px;
             }
-            @media (min-width: 992px) {
-                // width: 1440px;
-            }
         }
         &__text {
             z-index: 0;
@@ -123,14 +120,14 @@
                             width: 350px;
                         }
                         &:hover .title {
-                            max-width: 200px;
+                            max-width: 254px;
                         }
                         &:hover .subtitle {
                             max-width: 235px;
                             transition-duration: 1s;
                         }
                         &:hover .price {
-                            translate: -5px;
+                            transform: translate(-5px);
                             transition-duration: 1s;
                             transition-delay: 100ms;
                             transition-timing-function: ease-in-out;
@@ -178,7 +175,7 @@
                                 padding-top: 10px;
                                 font-weight: 500;
                                 font-size: 18px;
-                                max-width: 220px;
+                                max-width: 254px;
                             }
                             &__subtitle {
                                 display: inline-block;
