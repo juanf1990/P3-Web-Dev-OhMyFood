@@ -478,7 +478,7 @@ button {
 .explore__button:hover {
   transition: all 1s;
   transform: scale(1.03);
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #a16be0, #ff93e1);
 }
 
 .choose {
@@ -595,6 +595,7 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 30px;
   }
 }
 .restaurants__container__restaurant-card {
@@ -612,7 +613,7 @@ button {
 }
 @media (min-width: 992px) {
   .restaurants__container__restaurant-card {
-    width: 350px;
+    width: 340px;
   }
 }
 .restaurants__container__restaurant-card:hover {
@@ -886,6 +887,7 @@ button {
   padding-top: 10px;
   font-weight: 500;
   font-size: 18px;
+  max-width: 260px;
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext__subtitle {
   flex: 0;
@@ -949,7 +951,7 @@ button {
 .restaurant-menu__container__menu__order__button:hover {
   transition: all 1s;
   transform: scale(1.03);
-  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  background: linear-gradient(to top left, #a16be0, #ff93e1);
 }
 
 .loading-area {

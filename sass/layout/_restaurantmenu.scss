@@ -160,6 +160,7 @@
                                 padding-top: 10px;
                                 font-weight: 500;
                                 font-size: 18px;
+                                max-width: 260px;
                             }
                             &__subtitle {
                                 flex: 0;
@@ -225,7 +226,7 @@
                 &:hover {
                     transition: all 1s;
                     transform: scale(1.03);
-                    background: linear-gradient(to bottom right, $colour-primary, $colour-secondary);
+                    background: linear-gradient(to top left, lighten($colour-primary, 5%), lighten($colour-secondary, 5%));
                 }
                 }
             }

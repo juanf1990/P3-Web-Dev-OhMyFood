@@ -26,6 +26,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            gap: 30px;
         }
         &__restaurant-card {
             display: flex;
@@ -40,7 +41,7 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             @media (min-width:992px) {
-                width: 350px;
+                width: 340px;
             }
             &:hover {
                 transform: scale(1.01);

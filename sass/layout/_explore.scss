@@ -44,7 +44,7 @@
         &:hover {
             transition: all 1s;
             transform: scale(1.03);
-            background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+            background: linear-gradient(to top, lighten($colour-primary, 5%), lighten($colour-secondary, 5%));
         }
         }
 }
