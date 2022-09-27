@@ -103,8 +103,6 @@
                         justify-content: center; 
                     }
                         &__card {
-                        display: flex;
-                        flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
                         border-radius: 15px;
@@ -115,33 +113,18 @@
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                         cursor: pointer;
                         width: 350px;
-                        transition: all 1s;
-                        @media (min-width:992px) {
-                            width: 350px;
-                        }
-                        &:hover .title {
-                            max-width: 254px;
-                        }
-                        &:hover .subtitle {
-                            max-width: 235px;
-                            transition-duration: 1s;
-                        }
-                        &:hover .price {
-                            transform: translate(-5px);
-                            transition-duration: 1s;
-                            transition-delay: 100ms;
-                            transition-timing-function: ease-in-out;
+                        overflow: hidden;
+                        .squeeze {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 400px;
+                            transition: width 1s 100ms ease-in-out;
+                            &:hover {
+                               width: 350px;
+                           }
                         }
                         &:hover .icon {
-                            transform-origin: 0% right;
-                            transition-duration: 1s;
-                            transition-delay: 100ms;
-                            transition-timing-function: ease-in-out;
-                            opacity: 1;
-                            width: 50px;
-                            min-height: 65px;
-                            max-height: fit-content;
-                            flex: 17%;
                             span {
                                 animation: spin 1s linear;
                             }
@@ -164,20 +147,22 @@
                             }
                         }
                         &__truncatetext {
+                            overflow: hidden;
+                            flex: 100%;
                             display: flex;
                             flex-direction: column;
                             gap: 5px;
                             padding-bottom: 10px;
                             margin-left: 10px;
-                            flex: 300px;
                             &__title {
+                                flex: 0;
                                 padding-left: 5px;
                                 padding-top: 10px;
                                 font-weight: 500;
                                 font-size: 18px;
-                                max-width: 254px;
                             }
                             &__subtitle {
+                                flex: 0;
                                 display: inline-block;
                                 padding-left: 5px;
                                 font-size: 15px;
@@ -185,23 +170,17 @@
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
                                 overflow: hidden;
-                                max-width: 286px;
-                                @media (min-width:992px) {
-                                    max-width: 286px;
-                                }
                             }
                         }
                         &__price {
-                            display: flex;
-                            flex: 25px;
                             font-weight: 500;
                             font-size: 14px;
                             color: #525252;
                             margin-top: 30px;
                             margin-right: 20px;
+                            min-width: 25px;
                         }       
                         &__icon {
-                            flex: 0%;
                             display: inline-flex;
                             align-items: center;
                             justify-content: center;
@@ -209,9 +188,9 @@
                             color: white;
                             border-top-right-radius: 15px;
                             border-bottom-right-radius: 15px;
-                            overflow:hidden;
-                            opacity: 0;
-                            position: relative;
+                            width: 50px;
+                            min-width: 50px;
+                            height: 65px;
                             &__inner {
                                 background-color: white;
                                 border-radius: 50%;
@@ -247,7 +226,6 @@
                     transition: all 1s;
                     transform: scale(1.03);
                     background: linear-gradient(to bottom right, $colour-primary, $colour-secondary);
-
                 }
                 }
             }

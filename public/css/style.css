@@ -824,8 +824,6 @@ button {
   }
 }
 .restaurant-menu__container__menu__section__container__card {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
@@ -836,36 +834,17 @@ button {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   cursor: pointer;
   width: 350px;
-  transition: all 1s;
+  overflow: hidden;
 }
-@media (min-width: 992px) {
-  .restaurant-menu__container__menu__section__container__card {
-    width: 350px;
-  }
+.restaurant-menu__container__menu__section__container__card .squeeze {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  transition: width 1s 100ms ease-in-out;
 }
-.restaurant-menu__container__menu__section__container__card:hover .title {
-  max-width: 254px;
-}
-.restaurant-menu__container__menu__section__container__card:hover .subtitle {
-  max-width: 235px;
-  transition-duration: 1s;
-}
-.restaurant-menu__container__menu__section__container__card:hover .price {
-  transform: translate(-5px);
-  transition-duration: 1s;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
-}
-.restaurant-menu__container__menu__section__container__card:hover .icon {
-  transform-origin: 0% right;
-  transition-duration: 1s;
-  transition-delay: 100ms;
-  transition-timing-function: ease-in-out;
-  opacity: 1;
-  width: 50px;
-  min-height: 65px;
-  max-height: fit-content;
-  flex: 17%;
+.restaurant-menu__container__menu__section__container__card .squeeze:hover {
+  width: 350px;
 }
 .restaurant-menu__container__menu__section__container__card:hover .icon span {
   animation: spin 1s linear;
@@ -888,21 +867,23 @@ button {
   }
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext {
+  overflow: hidden;
+  flex: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding-bottom: 10px;
   margin-left: 10px;
-  flex: 300px;
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext__title {
+  flex: 0;
   padding-left: 5px;
   padding-top: 10px;
   font-weight: 500;
   font-size: 18px;
-  max-width: 254px;
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext__subtitle {
+  flex: 0;
   display: inline-block;
   padding-left: 5px;
   font-size: 15px;
@@ -910,24 +891,16 @@ button {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 286px;
-}
-@media (min-width: 992px) {
-  .restaurant-menu__container__menu__section__container__card__truncatetext__subtitle {
-    max-width: 286px;
-  }
 }
 .restaurant-menu__container__menu__section__container__card__price {
-  display: flex;
-  flex: 25px;
   font-weight: 500;
   font-size: 14px;
   color: #525252;
   margin-top: 30px;
   margin-right: 20px;
+  min-width: 25px;
 }
 .restaurant-menu__container__menu__section__container__card__icon {
-  flex: 0%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -935,9 +908,9 @@ button {
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  overflow: hidden;
-  opacity: 0;
-  position: relative;
+  width: 50px;
+  min-width: 50px;
+  height: 65px;
 }
 .restaurant-menu__container__menu__section__container__card__icon__inner {
   background-color: white;
