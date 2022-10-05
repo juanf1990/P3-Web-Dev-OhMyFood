@@ -848,6 +848,7 @@ button {
   justify-content: space-between;
   width: 400px;
   transition: width 1s 100ms ease-in-out;
+  height: 100%;
 }
 .restaurant-menu__container__menu__section__container__card .squeeze:hover {
   width: 350px;
@@ -880,6 +881,7 @@ button {
   gap: 5px;
   padding-bottom: 10px;
   margin-left: 10px;
+  height: 100%;
 }
 .restaurant-menu__container__menu__section__container__card__truncatetext__title {
   flex: 0;
@@ -917,7 +919,8 @@ button {
   border-bottom-right-radius: 15px;
   width: 50px;
   min-width: 50px;
-  height: 65px;
+  height: 100%;
+  min-height: 65px;
 }
 .restaurant-menu__container__menu__section__container__card__icon__inner {
   background-color: white;

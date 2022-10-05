@@ -1,173 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./public/css/prefixed/style.css">
-        <script src="https://kit.fontawesome.com/58ae435494.js" crossorigin="anonymous"></script>
-        <title>Menu - Bastille</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="./index.html" class="header__icon">
-                <i class="fa-solid fa-arrow-left header__icon"></i>
-            </a>
-            <h1 class="header__title">ohmyfood</h1>
-        </header>
-        <main>
-            <div class="restaurant-menu">
-                <div class="restaurant-menu__container">
-                    <div class="restaurant-menu__container__imgbox">
-                        <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurant-menu__container__imgbox__img" alt="restaurant-plate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/prefixed/style.css" />
+    <script
+      src="https://kit.fontawesome.com/58ae435494.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Menu - Bastille</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__icon">
+        <i class="fa-solid fa-arrow-left header__icon"></i>
+      </a>
+      <h1 class="header__title">ohmyfood</h1>
+    </header>
+    <main>
+      <div class="restaurant-menu">
+        <div class="restaurant-menu__container">
+          <div class="restaurant-menu__container__imgbox">
+            <img
+              src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              class="restaurant-menu__container__imgbox__img"
+              alt="restaurant-plate"
+            />
+          </div>
+          <div class="restaurant-menu__container__text">
+            <h3 class="restaurant-menu__container__text__header">Bastille</h3>
+            <i
+              class="fa-regular fa-heart restaurant-menu__container__text__icon"
+            ></i>
+          </div>
+          <div class="restaurant-menu__container__menu">
+            <div class="restaurant-menu__container__menu__section">
+              <h2 class="restaurant-menu__container__menu__section__title">
+                ENTREES
+              </h2>
+              <div
+                class="restaurant-menu__container__menu__section__break"
+              ></div>
+              <div class="restaurant-menu__container__menu__section__container">
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Citrus Squid Carpaccio
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With orange zest
+                      </div>
                     </div>
-                    <div class="restaurant-menu__container__text">
-                        <h3 class="restaurant-menu__container__text__header">Bastille</h3>
-                        <i class="fa-regular fa-heart restaurant-menu__container__text__icon"></i>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      25€
                     </div>
-                    <div class="restaurant-menu__container__menu">
-                        <div class="restaurant-menu__container__menu__section">
-                            <h2 class="restaurant-menu__container__menu__section__title">ENTREES</h2>
-                            <div class="restaurant-menu__container__menu__section__break"></div>
-                            <div class="restaurant-menu__container__menu__section__container">
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Citrus Squid Carpaccio</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With orange zest</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">25€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Grandmother's Vegetable Soup</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">Carrots, parsnips, Jerusalem artichokes</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">35€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Onion Soup</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">Revisted</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">20€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="restaurant-menu__container__menu__section">
-                            <h2 class="restaurant-menu__container__menu__section__title">MAIN DISH</h2>
-                            <div class="restaurant-menu__container__menu__section__break"></div>
-                            <div class="restaurant-menu__container__menu__section__container">
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Scallops</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With mashed parsnip</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">40€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Magret de canard</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With mashed potatoes</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">35€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Game Hen</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With vegetable gnocchis</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">44€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="restaurant-menu__container__menu__section">
-                            <h2 class="restaurant-menu__container__menu__section__title">DESSERTS</h2>
-                            <div class="restaurant-menu__container__menu__section__break"></div>
-                            <div class="restaurant-menu__container__menu__section__container">
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Floral Ice Cream</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With hazelnut butter</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">18€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Chocolate Lava Cake</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">Revisited</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">22€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="restaurant-menu__container__menu__section__container__card">
-                                    <div class="restaurant-menu__container__menu__section__container__card squeeze">
-                                        <div class="restaurant-menu__container__menu__section__container__card__truncatetext">
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__title">Napolean</div>
-                                            <div class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle">With blueberries and marzipan</div>
-                                        </div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__price price">23€</div>
-                                        <div class="restaurant-menu__container__menu__section__container__card__icon icon">
-                                            <span><i class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="restaurant-menu__container__menu__order">
-                            <button class="restaurant-menu__container__menu__order__button">Order</button>
-                        </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
                     </div>
+                  </div>
                 </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Grandmother's Vegetable Soup
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        Carrots, parsnips, Jerusalem artichokes
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      35€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Onion Soup
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        Revisted
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      20€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </main>
-        <footer class="footer">
-            <h4 class="footer__title">ohmyfood</h4>
-            <div class="footer__container">
-                <a href="#" class="footer__container__item footer__container__item-1"><i class="fa-solid fa-utensils footer__container__item__icon"></i>Suggest a restaurant</a>
-                <a href="#" class="footer__container__item item-2"><i class="fa-solid fa-handshake-angle footer__container__item__icon"></i>Become a partner</a>
-                <a href="#" class="footer__container__item item-3">Legal</a>
-                <a class="footer__container__item__link" href="mailto:">Contact</a>
+            <div class="restaurant-menu__container__menu__section">
+              <h2 class="restaurant-menu__container__menu__section__title">
+                MAIN DISH
+              </h2>
+              <div
+                class="restaurant-menu__container__menu__section__break"
+              ></div>
+              <div class="restaurant-menu__container__menu__section__container">
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Scallops
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With mashed parsnip
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      40€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Magret de canard
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With mashed potatoes
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      35€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Game Hen
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With vegetable gnocchis
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      44€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-    </body>
+            <div class="restaurant-menu__container__menu__section">
+              <h2 class="restaurant-menu__container__menu__section__title">
+                DESSERTS
+              </h2>
+              <div
+                class="restaurant-menu__container__menu__section__break"
+              ></div>
+              <div class="restaurant-menu__container__menu__section__container">
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Floral Ice Cream
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With hazelnut butter
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      18€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Chocolate Lava Cake
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        Revisited
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      22€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="restaurant-menu__container__menu__section__container__card"
+                >
+                  <div
+                    class="restaurant-menu__container__menu__section__container__card squeeze"
+                  >
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__truncatetext"
+                    >
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__title"
+                      >
+                        Napolean
+                      </div>
+                      <div
+                        class="restaurant-menu__container__menu__section__container__card__truncatetext__subtitle subtitle"
+                      >
+                        With blueberries and marzipan
+                      </div>
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__price price"
+                    >
+                      23€
+                    </div>
+                    <div
+                      class="restaurant-menu__container__menu__section__container__card__icon icon"
+                    >
+                      <span
+                        ><i
+                          class="fa-regular fa-circle-check restaurant-menu__container__menu__section__container__card__icon__inner inner"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="restaurant-menu__container__menu__order">
+              <button class="restaurant-menu__container__menu__order__button">
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h4 class="footer__title">ohmyfood</h4>
+      <div class="footer__container">
+        <a href="#" class="footer__container__item footer__container__item-1"
+          ><i class="fa-solid fa-utensils footer__container__item__icon"></i
+          >Suggest a restaurant</a
+        >
+        <a href="#" class="footer__container__item item-2"
+          ><i
+            class="fa-solid fa-handshake-angle footer__container__item__icon"
+          ></i
+          >Become a partner</a
+        >
+        <a href="#" class="footer__container__item item-3">Legal</a>
+        <a class="footer__container__item__link" href="mailto:">Contact</a>
+      </div>
+    </footer>
+  </body>
 </html>
